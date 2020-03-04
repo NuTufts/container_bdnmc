@@ -1,0 +1,8 @@
+FROM larbys/root:6.16.00_ubuntu16.04_py2
+
+# INSTALL BDNMC
+RUN cd /usr/local && git clone https://github.com/nutufts/BdnMC bdnmc && \
+    cd /usr/local/bdnmc/build && \
+    make
+
+

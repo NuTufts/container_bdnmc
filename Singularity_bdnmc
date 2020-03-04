@@ -1,0 +1,10 @@
+Bootstrap: docker
+From: nutufts/bdnmc:latest
+
+%post
+  apt update -y && apt install -y emacs && apt autoremove -y && apt clean -y
+  mkdir -p /cluster/home
+  mkdir -p /cluster/kappa
+  mkdir -p /cluster/shared
+  mkdir -p /opt/shared
+  
